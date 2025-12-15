@@ -1,0 +1,104 @@
+---
+title: "Connect your app to ElevenLabs"
+sidebarTitle: "ElevenLabs"
+description: "Connect your app to ElevenLabs, an AI audio platform, to generate high-quality speech and audio content."
+icon: "volume-high"
+---
+
+[ElevenLabs](https://elevenlabs.io/) is an AI audio platform that lets your Lovable app generate **spoken audio and voice-driven experiences**. It’s designed for apps that need realistic text-to-speech, character voices, or audio output as a core part of the product experience.
+
+With ElevenLabs, your app can:
+
+- Convert text into high-quality synthesized speech
+- Use character voices or branded narrators
+- Generate podcasts, audio summaries, or spoken content
+- Power real-time conversational or voice-based interactions
+- Support accessibility through screen-free or hands-free experiences
+
+ElevenLabs is a good fit when your app depends on **spoken output or audio-first interaction** rather than text-only interfaces.
+
+## Common use cases and example apps
+
+| Example app                                       | Example prompt                                                                                             | Description                                                                                                                                                                                                                                                                         |
+| ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Voice-enabled assistants**                      | _Build a voice-enabled assistant. Users ask questions and the app responds aloud using ElevenLabs voices._ | **Create voice-enabled assistants that deliver spoken responses instead of text-only replies**.<br />The app accepts user input, generates a response, converts that response into spoken audio using a selected voice, and delivers audio as the primary output.                   |
+| **Daily briefing apps**                           | _Use ElevenLabs and build a daily briefing app that reads out metrics or summaries every morning._         | **Deliver daily briefings as audio so users can listen while multitasking**. <br />The app compiles a briefing from selected sources (for example metrics, dashboards, or summaries), generates a spoken version, and provides playback in-app.                                     |
+| **Podcast and narrated content generators**       | _Use ElevenLabs and build an app that turns articles or story prompts into narrated audio episodes._       | **Turn written content into narrated audio episodes users can listen to on demand**. <br />The app transforms articles or prompts into scripts, generates narration (optionally using multiple voices), and outputs complete audio episodes for on-demand listening..               |
+| **Children’s story and storytelling apps**        | _Use ElevenLabs and build a story app that generates narrated stories with character voices._              | **Generate narrated stories with expressive character voices for immersive storytelling experiences**.<br />The app creates stories based on user-defined inputs, assigns voices to characters, and produces fully narrated audio as the primary output.                            |
+| **Learning and instructional apps**               | _Use ElevenLabs and build a learning app that reads lessons or exercises aloud._                           | **Support learning through spoken instruction and narrated educational content**. <br />The app converts lessons, exercises, or explanations into spoken audio and delivers narration as a core part of the learning experience.                                                    |
+| **Fitness, wellness, and guided experience apps** | _Use ElevenLabs and build a fitness or wellness app that delivers spoken guidance._                        | **Provide guided experiences through audio-first instructions and prompts**. <br />The app generates spoken guidance for routines, sessions, or exercises and delivers audio continuously throughout the experience.                                                                |
+| **Accessibility features**                        | _Use ElevenLabs and build an app that reads content aloud for users who prefer or require audio output._   | **Enable audio-first access to app content so it can be consumed without relying on the screen**.<br />The app automatically generates spoken audio for relevant content and delivers audio as the primary way users consume information, supporting screen-free or hands-free use. |
+
+## How to connect ElevenLabs
+
+Workspace **admins** and **owners** can connect ElevenLabs.
+
+<Tip>
+  ElevenLabs promotion: Get your first month for free (new ElevenLabs customers only). Redeem by December 22, 2025. To redeem the offer, see [ElevenLabs video instructions](https://www.youtube.com/watch?v=S143_JtCtV8).
+</Tip>
+
+You can create multiple ElevenLabs connections using different API keys, and with different access levels, which is useful for separating environments (for example, development and production) or managing rate limits.
+
+When the connection is created, ElevenLabs becomes available across all projects in the workspace.
+
+### Prerequisites
+
+Before connecting ElevenLabs, make sure you have:
+
+- An ElevenLabs account and API key
+
+  <Note>
+    All audio generation or processing performed through this connector consumes ElevenLabs credits (based on the selected model and input length), and billing is handled directly by ElevenLabs, not Lovable.
+  </Note>
+- Lovable workspace owner or admin role
+
+### 1. Create an ElevenLabs account and API key
+
+An API key lets you connect to ElevenLabs API and use its features. You can create multiple keys with different access levels.
+
+To create an ElevenLabs API key:
+
+1. Go to [ElevenLabs](https://elevenlabs.io/app/developers/api-keys?source=lovable) and set up your account.
+3. In **Developers → API keys**, click **Create Key**.
+4. Give the key a descriptive name, for example, `Lovable integration`.
+5. Turn on **Restrict Key**.
+6. Set a monthly **Credit Limit**.
+7. Choose which feature endpoints this key can use, depending on what your app needs.
+8. Copy the generated API key and store it securely.
+
+   <Info>
+     Your API key functions like a password. Keep it secure and never share it publicly. You’ll need it in the next step.
+   </Info>
+
+### 2. Connect ElevenLabs to Lovable
+
+You can create multiple connections using different API keys.
+
+To connect ElevenLabs:
+
+1. Go to **Settings → Connectors → Shared connectors** and select **ElevenLabs**.
+2. Click **Add connection**.
+3. **Display name**: name the connection, for example `ElevenLabs Prod`.
+4. Under **Authentication**, enter your ElevenLabs API key (`sk_xxxxxxxx…`).
+5. Click **Create**.
+
+When connected, your Lovable apps can start generating speech and audio using ElevenLabs.
+
+## How to delete an ElevenLabs connection
+
+Workspace **admins** and **owners** can delete ElevenLabs connections.
+
+Deleting a connection is **permanent** and **cannot be undone**. It will remove the credentials from all linked projects, and any apps depending on ElevenLabs will stop working until a new connection is added.
+
+If the connection is used by multiple projects, consider creating a replacement connection first.
+
+To delete a connection:
+
+1. Go to **Settings → Connectors → Shared connectors** and select **ElevenLabs**.
+2. Open the connection you want to remove.
+3. Under **Delete this connection**, review the list of projects currently using it.
+4. Click **Delete** and confirm.
+
+---
+
+---

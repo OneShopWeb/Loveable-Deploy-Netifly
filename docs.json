@@ -74,7 +74,7 @@
               "integrations/ai",
               "integrations/supabase",
               "integrations/stripe",
-              "integrations/shopify"            
+              "integrations/shopify"
               ]
             },
             {

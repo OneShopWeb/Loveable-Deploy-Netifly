@@ -1,0 +1,96 @@
+---
+title: "Connect your app to Perplexity"
+sidebarTitle: "Perplexity"
+description: "Connect your app to Perplexity, an AI-powered search engine, to retrieve real-time information with verifiable citations."
+icon: "search"
+---
+
+Perplexity is an AI search platform that returns concise answers grounded in live web data and backed by sources. It’s designed for apps that need **fresh, trustworthy information**, rather than static or training-only knowledge.
+
+With Perplexity, your app can:
+
+- Answer questions using up-to-date information from the web
+- Generate summaries with clear, verifiable citations
+- Compare companies, products, or markets in real time
+- Reduce hours of manual research into seconds
+
+Perplexity is a good fit when your app depends on **recent, source-backed information** such as news, research, market intelligence, or fact verification.
+
+## Common use cases and example apps
+
+| Example app                              | Example prompt                                                                                   | Description                                                                                                                                                                                                    |
+| :--------------------------------------- | :----------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Sales prep assistants**                | _Use Perplexity and build a sales prep assistant that gathers company context before each call._ | **Pull company overviews, recent news, leadership changes, and risk signals using live search**. <br />The app runs Perplexity queries before a meeting and presents a concise, cited briefing for sales reps. |
+| **Competitor and market research tools** | _Build a competitor research tool using Perplexity._                                             | **Summarize funding events, product launches, positioning changes, and market activity**. <br />The app runs multiple Perplexity searches in parallel and aggregates the results into a research dashboard.    |
+| **Regulatory or policy trackers**        | _Build an app that tracks regulatory updates using Perplexity._                                  | **Monitor new rulings, policy changes, or compliance updates based on recent sources**. <br />The app regularly queries Perplexity and surfaces newly published or updated information with citations.         |
+| **Fact-checking apps (“Is this true?”)** | _Build a fact-checking app using Perplexity search._                                             | **Verify claims by retrieving supporting and contradicting sources**. <br />The app accepts a statement as input and returns a synthesized answer with cited references.                                       |
+| **Research assistants**                  | _Use Perplexity and build a research assistant that answers open-ended questions._               | **Answer questions like “What happened in this industry this week?” or “Who are the top competitors for X?”** <br />The app uses Perplexity to generate structured, cited responses.                           |
+
+## How to connect Perplexity
+
+Workspace **admins** and **owners** can connect Perplexity.
+
+You can create multiple Perplexity connections using different API keys, which is useful for separating environments (for example, development and production) or managing rate limits.
+
+When the connection is created, Perplexity becomes available across all projects in the workspace.
+
+### Prerequisites
+
+Before connecting Perplexity, make sure you have:
+
+- A Perplexity account with admin permissions for billing and API key management
+- A Perplexity API key
+- Lovable workspace owner or admin role
+
+<Note>
+  You must have an active Perplexity account with API access. All search and answer requests performed through this connector consume your Perplexity API usage, and billing is handled directly by Perplexity, not Lovable.
+</Note>
+
+### 1. Create a Perplexity account and API key
+
+An API key lets you connect to Perplexity API and use its features. You can create multiple API keys in Perplexity.
+
+To create a Perplexity API key:
+
+1. Go to [Perplexity](https://www.perplexity.ai/) and set up your account.
+2. Go to **Account (profile icon) → API**.
+3. Go to **API group** to set up your organization. Fill out your organization’s name, address, and tax details.
+4. Go to **API billing** and click **Add Payment Method** to enter your credit card information.
+5. Go to **API key** and click **Create key**. Give your key a descriptive name, for example, `Lovable integration`.
+6. Copy the generated API key and store it securely.
+
+   <Info>
+     Your API key functions like a password. Keep it secure and never share it publicly. You’ll need it in the next step.
+   </Info>
+
+See Perplexity docs for detailed instructions: [API Groups & Billing](https://docs.perplexity.ai/getting-started/api-groups).
+
+### 2. Connect Perplexity to Lovable
+
+You can create multiple connections using different API keys.
+
+To connect Perplexity:
+
+1. Go to **Settings → Connectors → Shared connectors** and select **Perplexity**.
+2. Click **Add connection**.
+3. **Display name**: name the connection, for example `Perplexity Prod`.
+4. Under **Authentication**, enter your Perplexity API key (`pplx-xxxx…`).
+5. Click **Create**.
+
+When connected, your Lovable apps can start using Perplexity to retrieve real-time, cited information.
+
+## How to delete a Perplexity connection
+
+Workspace **admins** and **owners** can delete Perplexity connections.
+
+Deleting a connection is permanent and cannot be undone. It will remove the credentials from all linked projects, and any apps depending on Perplexity will stop working until a new connection is added.
+
+If the connection is used by multiple projects, consider creating a replacement connection first.
+
+To delete a connection:
+
+1. Go to **Settings → Connectors → Shared connectors** and select **Perplexity**.
+2. Open the connection you want to remove.
+3. Under **Delete this connection**, review the list of projects currently using it.
+4. Click **Delete** and confirm.
+
