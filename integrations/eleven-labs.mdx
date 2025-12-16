@@ -52,7 +52,7 @@ Before connecting ElevenLabs, make sure you have:
   </Note>
 - Lovable workspace owner or admin role
 
-### 1. Create an ElevenLabs account and API key
+### Step 1: Create an ElevenLabs account and API key
 
 An API key lets you connect to ElevenLabs API and use its features. You can create multiple keys with different access levels.
 
@@ -70,7 +70,7 @@ To create an ElevenLabs API key:
      Your API key functions like a password. Keep it secure and never share it publicly. You’ll need it in the next step.
    </Info>
 
-### 2. Connect ElevenLabs to Lovable
+### Step 2: Connect ElevenLabs to Lovable
 
 You can create multiple connections using different API keys.
 
@@ -84,21 +84,6 @@ To connect ElevenLabs:
 
 When connected, your Lovable apps can start generating speech and audio using ElevenLabs.
 
-## How to delete an ElevenLabs connection
+import DeleteConnection from '/snippets/delete-connection.mdx';
 
-Workspace **admins** and **owners** can delete ElevenLabs connections.
-
-Deleting a connection is **permanent** and **cannot be undone**. It will remove the credentials from all linked projects, and any apps depending on ElevenLabs will stop working until a new connection is added.
-
-If the connection is used by multiple projects, consider creating a replacement connection first.
-
-To delete a connection:
-
-1. Go to **Settings → Connectors → Shared connectors** and select **ElevenLabs**.
-2. Open the connection you want to remove.
-3. Under **Delete this connection**, review the list of projects currently using it.
-4. Click **Delete** and confirm.
-
----
-
----
+<DeleteConnection connectorName="ElevenLabs" />

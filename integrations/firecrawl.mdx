@@ -72,7 +72,7 @@ Follow the setup steps below based on how you want to connect Firecrawl.
     - A Firecrawl account and API key
     - Lovable workspace owner or admin role
 
-    ### 1. Create a Firecrawl account and API key
+    ### Step 1: Create a Firecrawl account and API key
 
     You can create multiple API keys in Firecrawl. This is useful for different environments or rate limits.
 
@@ -90,7 +90,7 @@ Follow the setup steps below based on how you want to connect Firecrawl.
 
     Firecrawl provides free credits when you sign up, which is enough to test your connection and complete this setup.
 
-    ### 2. Connect Firecrawl to Lovable
+    ### Step 2: Connect Firecrawl to Lovable
 
     You can create multiple connections using different API keys.
 
@@ -106,17 +106,6 @@ Follow the setup steps below based on how you want to connect Firecrawl.
   </Tab>
 </Tabs>
 
-## How to delete a Firecrawl connection
+import DeleteConnection from '/snippets/delete-connection.mdx';
 
-Workspace **admins** and **owners** can delete Firecrawl connections.
-
-Deleting a connection is **permanent** and **cannot be undone**. It will remove the credentials from all linked projects, and any apps depending on Firecrawl will stop working until a new connection is added.
-
-If the connection is used by multiple projects, consider creating a replacement connection first.
-
-To delete a connection:
-
-1. Go to **Settings → Connectors → Shared connectors** and select **Firecrawl**.
-2. Open the connection you want to remove.
-3. Under **Delete this connection**, review the list of projects currently using it.
-4. Click **Delete** and confirm.
+<DeleteConnection connectorName="Firecrawl" />

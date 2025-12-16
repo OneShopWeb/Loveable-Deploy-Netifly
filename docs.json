@@ -72,9 +72,12 @@
             "pages": [                     
               "integrations/cloud",
               "integrations/ai",
-              "integrations/supabase",
+              "integrations/eleven-labs",
+              "integrations/firecrawl",
+              "integrations/perplexity",
+              "integrations/shopify",
               "integrations/stripe",
-              "integrations/shopify"
+              "integrations/supabase"
               ]
             },
             {
